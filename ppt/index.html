@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Multiprocessing PHP - Grzegorz Nowicki</title>
+    <meta name="author" content="Grzegorz Nowicki" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/multiprocessingphp.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+
+<!--data-rotate-x="-360" data-rotate-y="0" data-rotate-z="1080"-->
+    <div id="title" class="step" data-x="3000" data-y="1500" data-scale="1" data-z="10000" data-rotate-x="5" data-rotate-y="-5" data-rotate-z="-45">
+        <h1>Multiprocessing <img src="img/php.gif" alt=""></h1>
+    </div>
+
+    <div id="who-am-i-1" class="step slide" data-x="2000" data-y="-1500" data-z="-5000">
+        <h1>Who am I?</h1>
+        <dl>
+            <dt>name:</dt>
+            <dd>Grzegorz Nowicki</dd>
+            <dt>age:</dt>
+            <dd>29</dd>
+            <dt>job (past):</dt>
+            <dd>php-developer@allegro-group (3 years)</dd>
+            <dt>job (current):</dt>
+            <dd>ios-developer@allegro-group (almost 2 years)</dd>
+        </dl>
+    </div>
+    <div id="who-am-i-2" class="step slide" data-x="2000" data-y="-1850" data-z="-5350" data-rotate-x="90">
+        <h1>How I met PHP? ;-) (in 1999)</h2>
+        <small>My first index.php: (please don't laugh...)</small>
+        <pre>
+        &lt;?php
+        function mySuperTopSecretFunction($a, $b) {
+            ...some secret code here....
+        }
+        ?&gt;
+        &lt;html&gt;
+        ....
+        &lt;script&gt;
+            var x = mySuperTopSecretFunction(1,2);
+            alert(x);
+        &lt;/script&gt;
+        </pre>
+        <p>WTF? I just want to hide my JS function on the server side... ;-(</p>
+    </div>
+    <div id="who-am-i-3" class="step slide" data-x="2450" data-y="-1500" data-z="-5450" data-rotate-y="90">
+        <h1>My favorite programming languages:</h1>
+        <dl>
+            <dt>JavaScript</dt>
+            <dd>Yoda Conditions, high WTF/min ;-)</dd>
+            <dt>PHP</dt>
+            <dd>is not like Ruby</dd>
+            <dt>Objective-C</dt>
+            <dd><cite>"Looks like shit ;)"</cite> <small>   by Radoslaw Benkel</small></dd>
+        </dl>
+    </div>
+
+    <div id="multiprocessing" class="step slide" data-x="0" data-y="400" data-z="0" data-rotate-y="0" data-scale="2">
+        <q>Multiprocessing</q>
+    </div>
+    <div id="adventures-of-multiprocessing" class="step slide" data-x="3500" data-y="500" data-z="-2000" data-rotate-z="-45" data-rotate-y="20" data-scale="2">
+        <h1>Adventures of multiprocessing ;-)</h1>
+        <ul>
+            <li><b>1)</b> Thread vs. Process</li>
+            <li><b>2)</b> Shared resources</li>
+            <li><b>3)</b> Resource blocking</li>
+            <li><b>4)</b> Process starvation</li>
+            <li><b>5)</b> Deadlock</li>
+        </ul>
+    </div>
+
+    <div id="multiprocessing-php" class="step slide" data-x="7000" data-y="500" data-z="500" data-rotate-x="45" data-scale="2">
+        <q>Multiprocessing PHP</q>
+    </div>    
+    <div id="multiprocessing-php-wtf" class="step" data-x="3500" data-y="-10000" data-z="-10000" data-rotate-x="-90" data-scale="10">
+        <strong>WTF!?!</strong>
+    </div>
+    
+    <div id="process-control-extenstions" class="step slide" data-x="7000" data-y="3300" data-z="0" data-rotate-z="0" data-scale="2">
+        <h1>Process Control Extensions</h1>
+        <img src='img/php_proc_cont_ext.png' alt='' />
+    </div>
+    
+    <div id="only-background" class="step slide" data-x="4000" data-y="3300" data-z="0" data-rotate-z="180" data-scale="2">
+        <q>Background (CLI) ONLY!</q>
+    </div>
+    
+    <div id="what-for" class="step slide" data-x="2000" data-y="4600" data-z="-3000" data-rotate-z="180">
+        <q>What for???</q>
+    </div>
+    
+    <div id="specific-requirements" class="step slide" data-x="2000" data-y="3600" data-z="-1500" data-rotate-z="180">
+        <q>specific requirements</q>
+        <b>vs.</b>
+        <q>limited resources</q>
+    </div>
+    
+    <div id="why-php-use-java" class="step slide" data-x="2000" data-y="2600" data-z="0" data-rotate-z="180">
+        <h1>Why <img src="img/php.gif" alt="">???</h1>
+        <br />
+        <h1>Use:</h1>
+        <img src="img/javalogo.jpg" alt="">
+    </div>
+    <div id="fuck-you" class="step slide" data-x="2000" data-y="1500" data-z="-450" data-rotate-x="90" data-rotate-z="180">
+        <img src='img/fuck-you.jpg' alt='' />
+        <h1>I got great <img src="img/php.gif" alt=""> team!!!</h1>
+    </div>
+
+
+
+
+    <div id="php-ex" class="step" data-x="-2000" data-y="4000" data-scale="4">
+        <strong>&lt;?php...</strong>
+    </div>
+
+    
+
+
+    <!-- div id="overview" class="step" data-x="2000" data-y="1000" data-scale="11">
+    </div -->
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
